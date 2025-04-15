@@ -94,7 +94,7 @@ export class DisplayDirective {
     }
 
     if (this.displayAsHourMinute) {
-      let sign = parsed < 0 ? '-' : '';
+      const sign = parsed < 0 ? '-' : '';
       const minutes = Math.floor(Math.abs(parsed) / 60000);
       const h = pad(Math.floor(minutes / 60));
       const m = pad(minutes % 60);
